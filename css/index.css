@@ -1,0 +1,72 @@
+body{
+    margin:0 auto;
+    padding:0; 
+    font-family: 'Noto Sans SC', sans-serif;
+  }
+header{
+	height: 200px;
+	width: 100%;
+	background-color: purple;
+}
+
+
+
+
+
+h1{
+  color: #00a8ff;
+  margin-left: 16.5%;
+  float: left;
+  margin-top: 1.7%;
+}
+.navbar{
+  overflow: hidden;    
+}
+.any{
+  color:#012B74;
+  font-family: 'Lato', sans-serif;
+}
+.login{
+  float: right;
+  margin-right: 3.3%;
+  margin-top: 2.3%;
+  height: 30px;
+  width: 90px;
+  background-color: #00a8ff;
+  -webkit-border-radius: 21px;
+  border: none;
+  transition-duration: .3s;
+  transition-property: background-color;
+  margin-left: 90px;
+  padding-top: 7px;
+}
+.login_text,.signup_text{
+  font-weight: bold;
+  font-family: 'Noto Sans SC', sans-serif;  
+  font-size: 16px;
+  color: white;
+  margin-left: 23px;
+}
+  .login:hover{
+  background-color: #0097e6;
+}
+a{
+  text-decoration: none;
+  color: #00a8ff;
+}
+.signup{
+  float: right;
+  margin-right: 250px;
+  margin-top: 32px;
+  height: 30px;
+  width: auto;
+  background-color: none;
+  -webkit-border-radius: 25px;
+  border-style: solid;
+  border-color: white;
+  transition-duration: .3s;
+  transition-property: background-color;
+  padding-top: 7px;
+  padding-right: 23px;
+  text-decoration: none;
+}
