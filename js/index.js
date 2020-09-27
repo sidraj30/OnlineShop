@@ -3,19 +3,25 @@ $(document).ready(function(){
         $('.category-list').toggle("slide");
         $('.cart-products').hide(500);
     });
-    $('.category-type').click(function() {
-        if ($(this).hasClass('selected')) {
+        $('.category-type').click(function() {
+            if ($(this).hasClass('selected')) {
+                if($(window).width() < 1024){
+                    $('.category-list').toggle("slide");
+                }
+            }
+            else{
+            $('.category-type').each(function(){
+                $(this).removeClass('selected');
+            });
+            $(this).addClass('selected');
+                if($(window).width() < 1024){
             $('.category-list').toggle("slide");
         }
-        else{
-        $('.category-type').each(function(){
-            $(this).removeClass('selected');
+            $('#catNo').text($(this).text());
+            }
+
         });
-        $(this).addClass('selected');
-        $('.category-list').toggle("slide");
-        $('#catNo').text($(this).text());
-        }
-    });
+    
     var lastScrollTop = 0;
     $(window).scroll(function(event){
         var st = $(this).scrollTop();
